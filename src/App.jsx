@@ -10,9 +10,9 @@ import Venue from './pages/Venue'
 
 export default function App() {
   return (
-    <div className="app-root">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="page-wrap">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -1,5 +1,5 @@
-import gourav from '../assets/core-team/gourav.png'
-import siddharth from '../assets/core-team/siddharth.jpeg'
+import gourav from '../assets/Core-Team/gourav.png'
+import siddharth from '../assets/Core-Team/siddharth.jpeg'
 
 export const navLinks = [
   { label: 'Home', path: '/' },

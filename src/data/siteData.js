@@ -1,3 +1,6 @@
+import gourav from '../assets/core-team/gourav.png'
+import siddharth from '../assets/core-team/siddharth.jpeg'
+
 export const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
@@ -32,12 +35,50 @@ export const sponsors = [
 ]
 
 export const team = [
-  { name: 'Aditi Nair', role: 'Lead Organizer' },
-  { name: 'Vikram Singh', role: 'Tech Lead' },
-  { name: 'Neha Patel', role: 'Partnerships Lead' },
-  { name: 'Yash Malhotra', role: 'Design Lead' },
-  { name: 'Isha Verma', role: 'Community Manager' },
-  { name: 'Manav Joshi', role: 'Operations Lead' }
+  {
+    name: 'Dr. Usha Batra',
+    role: 'Faculty Member',
+    linkedin: 'https://linkedin.com/in/faculty',
+    type: 'faculty'
+  },
+  {
+    name: 'Gourav',
+    role: 'Chapter Lead',
+    image: gourav,
+    linkedin: 'https://linkedin.com/in/gourav-jaat',
+    type: 'captain'
+  },
+  {
+    name: 'Siddharth',
+    role: 'Deputy Chapter Lead',
+    image: siddharth,
+    linkedin: 'https://www.linkedin.com/in/siddharth-bhardwaj-317a60320/',
+    type: 'captain'
+  },
+  {
+    name: 'Aditya',
+    role: 'Partnerships Lead',
+    linkedin: 'https://linkedin.com/in/aditya',
+    type: 'core'
+  },
+  {
+    name: 'Gautam',
+    role: 'Design Lead',
+    linkedin: 'https://linkedin.com/in/gautam',
+    type: 'core'
+  },
+  {
+    name: 'Rewa',
+    role: 'Community Manager',
+    linkedin: 'https://linkedin.com/in/rewa',
+    type: 'core'
+  },
+  {
+    name: 'Shradha',
+    role: 'Operations Lead',
+    linkedin: 'https://linkedin.com/in/shradha',
+    type: 'core'
+  }
 ]
 
 export const marqueeBrands = ['ACME', 'GLOBEX', 'INITECH', 'UMBRELLA', 'WAYNE', 'STARK', 'SOYLENT', 'HOSHI']

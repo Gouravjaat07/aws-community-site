@@ -1,25 +1,33 @@
 import SectionTitle from '../components/SectionTitle'
-import { sponsors } from '../data/siteData'
 
 export default function Sponsors() {
   return (
     <section className="py-[68px] bg-white min-h-[60vh]">
-      <div className="mx-auto w-[92%] max-w-[1120px]">
-        <SectionTitle title="Sponsors" subtitle="Organizations supporting student innovation." />
+      <div className="mx-auto w-[92%] max-w-[900px]">
+        <SectionTitle
+          title="Sponsors"
+          subtitle="Partner with us to empower the next generation of cloud builders."
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {sponsors.map((s) => (
-            <article
-              key={s.name}
-              className="bg-white border-2 border-black shadow-[4px_4px_0_#000] p-[18px]"
-            >
-              <span className="inline-block bg-white border-2 border-black rounded-full font-bold px-3 py-1 mb-4 text-sm">
-                {s.tier}
-              </span>
-              <h3 className="text-xl mb-2">{s.name}</h3>
-              <p>Supporting workshops, events, and student projects.</p>
-            </article>
-          ))}
+        <div className="bg-[#fff7dc] border-2 border-black rounded-2xl shadow-[8px_8px_0_#000] p-10 text-center">
+          <h2 className="text-4xl font-extrabold mb-4">
+            Become Our Event Partner
+          </h2>
+
+          <p className="text-lg text-gray-800 max-w-2xl mx-auto mb-8">
+            Support student innovation, technical workshops, meetups, and cloud learning
+            initiatives. Join us in building a stronger developer community and make a lasting
+            impact on the next generation of builders.
+          </p>
+
+          <a
+            href="YOUR_SPONSOR_FORM_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-black text-white font-bold px-8 py-4 rounded-xl border-2 border-black shadow-[6px_6px_0_#000] transition-all duration-200 hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0_#000]"
+          >
+            Become a Sponsor →
+          </a>
         </div>
       </div>
     </section>

@@ -1,13 +1,16 @@
 import gourav from '../assets/Core-Team/gourav.png'
 import siddharth from '../assets/Core-Team/siddharth.jpeg'
+import gautam from '../assets/Core-Team/gautam1.png'
+import aditya from '../assets/Core-Team/aditya.jpeg'
+import ushaMam from '../assets/Core-Team/usha-mam.jpeg'
 
 export const navLinks = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
+  { label: 'Events', path: '/events' },
   { label: 'Speakers', path: '/speakers' },
   { label: 'Sponsors', path: '/sponsors' },
   { label: 'Team', path: '/team' },
-  { label: 'Venue', path: '/venue' }
+  { label: 'FAQ', path: '/faq' }
 ]
 
 export const heroStats = [
@@ -38,7 +41,8 @@ export const team = [
   {
     name: 'Dr. Usha Batra',
     role: 'Faculty Member',
-    linkedin: 'https://linkedin.com/in/faculty',
+    image: ushaMam,
+    linkedin: 'https://www.linkedin.com/in/dr-usha-batra-90a8b97b?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     type: 'faculty'
   },
   {
@@ -57,28 +61,39 @@ export const team = [
   },
   {
     name: 'Aditya',
-    role: 'Partnerships Lead',
-    linkedin: 'https://linkedin.com/in/aditya',
+    role: 'Technical Lead',
+    image: aditya,
+    linkedin: 'https://www.linkedin.com/in/aditya-sharma-8b2aa9244/',
     type: 'core'
   },
   {
     name: 'Gautam',
-    role: 'Design Lead',
-    linkedin: 'https://linkedin.com/in/gautam',
+    role: 'Marketing and Social Media Lead',
+    image: gautam,
+    linkedin: 'https://www.linkedin.com/in/gautam-sharma-848697309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     type: 'core'
   },
   {
     name: 'Rewa',
-    role: 'Community Manager',
-    linkedin: 'https://linkedin.com/in/rewa',
+    role: 'Event and Operations Lead',
+    // linkedin: 'https://linkedin.com/in/rewa',
     type: 'core'
   },
   {
     name: 'Shradha',
-    role: 'Operations Lead',
-    linkedin: 'https://linkedin.com/in/shradha',
+    role: 'Partnership and Outreach Lead',
+    // linkedin: 'https://linkedin.com/in/shradha',
     type: 'core'
   }
 ]
 
-export const marqueeBrands = ['ACME', 'GLOBEX', 'INITECH', 'UMBRELLA', 'WAYNE', 'STARK', 'SOYLENT', 'HOSHI']
+export const marqueeBrands = [
+  'AWS',
+  'Amazon EC2',
+  'Amazon S3',
+  'AWS Lambda',
+  'Amazon Bedrock',
+  'AWS Educate',
+  'AWS Academy',
+  'AWS Cloud Clubs',
+]

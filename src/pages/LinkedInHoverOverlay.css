@@ -1,0 +1,61 @@
+/* 
+ * LinkedInHoverOverlay.css
+ *
+ * All values below were reverse-engineered from the Arushi Garg reference
+ * screenshot by thresholding the badge's solid-fill pixels into a binary
+ * mask and measuring it directly (not eyeballed):
+ *
+ *   --badge-size:   measured badge bbox (~34px) against the actual
+ *                   photo-circle diameter (~177px, glow excluded) in the
+ *                   screenshot -> ratio 0.19-0.20 -> 110px avatar * 0.19 = 21px
+ *   --badge-radius: fit against the corner pixel-cut pattern (2px/1px/0px
+ *                   across the first 3 rows of the mask) -> radius ~3.5px
+ *                   on the sampled 34px box -> scales to 2px at 21px
+ *   --badge-color:  most frequent solid-fill pixel value sampled from the
+ *                   reference, away from anti-aliased edges: rgb(90,90,246)
+ *   --glyph-scale:  white glyph's own bbox (~23px) measured inside the
+ *                   badge box interior (~34px) -> ratio 0.66
+ */
+
+.linkedin-hover-overlay {
+  --badge-size: 21px;
+  --badge-radius: 2px;
+  --badge-color: #5a5af6;
+  --glyph-scale: 0.66;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  border-radius: var(--badge-radius);
+  background-color: var(--badge-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  transform-origin: center center;
+  transform: translate(-50%, -50%) scale(0.82);
+  opacity: 0;
+
+  transition: opacity 280ms ease-out, transform 280ms ease-out;
+  will-change: opacity, transform;
+}
+
+/* Team.jsx toggles this via the `group` class on the parent <article> */
+.group:hover .linkedin-hover-overlay {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.linkedin-hover-overlay__glyph {
+  width: calc(var(--glyph-scale) * 100%);
+  height: calc(var(--glyph-scale) * 100%);
+  display: block;
+}

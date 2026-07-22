@@ -3,6 +3,8 @@ import siddharth from '../assets/Core-Team/siddharth.jpeg'
 import gautam from '../assets/Core-Team/gautam1.png'
 import aditya from '../assets/Core-Team/aditya.jpeg'
 import ushaMam from '../assets/Core-Team/usha-mam.jpeg'
+import rewa from '../assets/Core-Team/rewa.jpeg'
+import shradha from '../assets/Core-Team/shradha.jpeg'
 
 export const navLinks = [
   { label: 'Home', path: '/' },
@@ -39,7 +41,7 @@ export const sponsors = [
 
 export const team = [
   {
-    name: 'Dr. Usha Batra',
+    name: 'Prof (Dr) Usha Batra',
     role: 'Faculty Member',
     image: ushaMam,
     linkedin: 'https://www.linkedin.com/in/dr-usha-batra-90a8b97b?utm_source=share_via&utm_content=profile&utm_medium=member_android',
@@ -76,13 +78,15 @@ export const team = [
   {
     name: 'Rewa',
     role: 'Event and Operations Lead',
-    // linkedin: 'https://linkedin.com/in/rewa',
+    image: rewa,
+    linkedin: 'https://www.linkedin.com/in/rewa-gupta-0303b232a/',
     type: 'core'
   },
   {
     name: 'Shradha',
     role: 'Partnership and Outreach Lead',
-    // linkedin: 'https://linkedin.com/in/shradha',
+    image: shradha,
+    linkedin: 'https://www.linkedin.com/in/shradha-pandey-758b21336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     type: 'core'
   }
 ]

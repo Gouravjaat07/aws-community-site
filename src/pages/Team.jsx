@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import SectionTitle from '../components/SectionTitle'
 import { team } from '../data/siteData'
-import LinkedInHoverOverlay, { OfficialLinkedInGlyph } from './LinkedInHoverOverlay'
+import {LinkedInHoverOverlay, OfficialLinkedInGlyph } from './LinkedInHoverOverlay'
 
 function TeamCard({ member, index, leadership = false }) {
   const [visible, setVisible] = useState(false)
